@@ -37,3 +37,10 @@ StatefulWidget 클래스로 한 화면을 구성하였습니다.
 클릭 시 발생할 이벤트는 나중에 작성합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211240997-fe134883-7cfc-4ca3-ad50-9ccb5d17ab63.png)
+
+#### 할 일 목록 리스트 추가
+```
+추가한 할 일 목록을 리스트의 형태로 보여주는 ListView를 생성합니다.
+역시 Expanded로 감싸서 ListView가 남은 영역을 꽉 채우도록 하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211241299-cc3f68c3-1b6f-43a8-8c67-9e7af9209a99.png)
