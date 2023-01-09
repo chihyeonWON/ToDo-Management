@@ -55,6 +55,21 @@ class _TodoListPageState extends State<TodoListPage> {
     );
   }
 
+  // 할 일 추가 메서드
+  void _addTodo(Todo todo) {
+    setState((){
+      _items.add(todo);
+      _todoController.text = ''; // 할 일 입력 필드를 비움
+    });
+  }
+
+  // 할 일 삭제 메서드
+  void _deleteTodo(Todo todo) {
+    setState(() {
+      _items.remove(todo);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
