@@ -44,3 +44,12 @@ StatefulWidget 클래스로 한 화면을 구성하였습니다.
 역시 Expanded로 감싸서 ListView가 남은 영역을 꽉 채우도록 하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211241299-cc3f68c3-1b6f-43a8-8c67-9e7af9209a99.png)
+
+#### 할 일 목록 리스트의 텍스트, 삭제 버튼 메서드 생성
+```
+할 일 목록 리스트는 추가한 문자열 텍스트와 후행에 삭제 아이콘인 쓰레기통 아이콘이 들어갑니다.
+Todo 객체를 인수로 받고 ListTile 위젯 안에 이 문자열과 아이콘을 넣고 반환하는 _buildItemWidget 메서드를 생성합니다.
+리스트의 문자열을 클릭 시 이탤릭체와 취소선이 나타나도록 설정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211242287-7b067d89-cf10-4684-aab0-3e68f5811f4f.png)
+
