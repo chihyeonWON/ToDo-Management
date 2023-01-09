@@ -80,11 +80,9 @@ class _TodoListPageState extends State<TodoListPage> {
             ),
             Expanded(
               child:ListView(
-                children:<Widget>[
-                  Text('할 일 리스트'),
-                ],
-              )
-            )
+                children:_items.map((todo) => _buildItemWidget(todo)).toList(),
+              ),
+            ),
           ],
         )
       )
