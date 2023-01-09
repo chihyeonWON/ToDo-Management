@@ -30,3 +30,10 @@ StatefulWidget 클래스로 한 화면을 구성하였습니다.
 영역을 모두 채우도록 하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211240755-e71ff074-bfaf-41dc-853d-deaeaf80d234.png)
+
+#### 할 일을 추가하는 버튼 생성
+```
+할 일을 추가하는 ElevatedButton을 생성합니다.
+클릭 시 발생할 이벤트는 나중에 작성합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211240997-fe134883-7cfc-4ca3-ad50-9ccb5d17ab63.png)
