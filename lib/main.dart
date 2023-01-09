@@ -51,9 +51,16 @@ class _TodoListPageState extends State<TodoListPage> {
                     onPressed: (){ },
                     child: Text('추가'),
                 ),
-              ]
+              ],
+            ),
+            Expanded(
+              child:ListView(
+                children:<Widget>[
+                  Text('할 일 리스트'),
+                ],
+              )
             )
-          ]
+          ],
         )
       )
     );
