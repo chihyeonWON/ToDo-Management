@@ -45,7 +45,7 @@ class _TodoListPageState extends State<TodoListPage> {
                 Expanded(
                   child:TextField(
                     controller:_todoController,
-                  )
+                  ),
                 ),
               ]
             )
