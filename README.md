@@ -113,4 +113,9 @@ app/build.gradle 파일에 다음과 같이 수정되어 있는 지 확인하고
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211497949-1ccd0d65-2885-48a5-bb69-0210f373ffab.png)
 
+#### project수준의 build.gradle 파일 수정
+```
+android/build.gradle 파일 역시 다음과 같이 수정되어 있는 지 확인하고 없는 것이 있다면 추가해준다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211498212-abbdc34a-d308-492f-9925-82609a9304c9.png)
 
