@@ -81,3 +81,11 @@ ListTile을 탭했을 때 이탤릭체와 취소선이 가도록 변경하는 �
 완료한 한 일을 탭하면 이탤릭체와 취소선이 가도록 하는 기능을 추가하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211459933-a71bde04-070a-4da9-9c13-e6f63128c5b9.png)
+
+#### 할 일 삭제 기능 추가
+```
+쓰레기통 아이콘을 탭했을 때 todo 객체의 리스트에서 삭제되도록 하는 _deleteTodo 메서드를 앞에서 생성하였습니다.
+_deleteTodo 메서드를 아이콘버튼의 onPressed 프로퍼티에 추가하였습니다.
+쓰레기통 아이콘을 탭했을 때 할 일 목록에서 탭한 할 일이 삭제되는 기능을 추가하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211460231-b4fbfeba-1536-4b5a-8dff-990d89631769.png)
