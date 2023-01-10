@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(); // Firebase 초기화
   runApp(MyApp());
 }
 
@@ -40,7 +43,7 @@ class _TodoListPageState extends State<TodoListPage> {
 
   Widget _buildItemWidget(Todo todo) {
     return ListTile(
-      onTap:() {}, // Todo : 클릭 시 완료/취소되도록 수정
+      onTap:() => _toggleTodo(todo), // Todo : 클릭 시 완료/취소되도록 수정
       title:Text(
         todo.title, // 할 일
         style:todo.isDone ? TextStyle( // 완료일 때는 스타일 적용
@@ -50,7 +53,7 @@ class _TodoListPageState extends State<TodoListPage> {
       ),
       trailing: IconButton( // 뒤에는 쓰레기통 아이콘을 배치
         icon:Icon(Icons.delete_forever),
-        onPressed:(){}, //Todo : 쓰레기통 클릭 시 삭제되도록 수정
+        onPressed:() => _deleteTodo(todo), //Todo : 쓰레기통 클릭 시 삭제되도록 수정
       )
     );
   }
