@@ -65,3 +65,11 @@ ListView에는 앞서 작성한 _buildItemWidget에서 반환된 ListTile이 들
 Todo 객체를 인수로 받아서 할 일 추가, 삭제, 완료/미완료의 기능을 수행하는 메서드를 생성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211458845-8245656c-5964-4614-905a-57ec3e4eb6cd.png)
+
+#### 할 일 추가 기능을 추가 버튼에 추가
+```
+앞 서 생성한 할 일 추가 메서드인 _addTodo를 추가버튼 안에 onPressed 프로퍼티에 추가합니다.
+할 일을 입력하고 추가버튼을 누르면 Todo 객체 리스트의 할 일로 저장되고 저장된 할 일이
+ListTile의 형식에 따라 보여지게 됩니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211459556-d3d119c0-c44c-499f-8f69-8f61d4b2ce2a.png)
