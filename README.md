@@ -119,3 +119,20 @@ android/build.gradle 파일 역시 다음과 같이 수정되어 있는 지 확�
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211498212-abbdc34a-d308-492f-9925-82609a9304c9.png)
 
+#### main.dart 파일의 main() 메서드 수정
+```
+import 'package:firebase_core/firebase_core.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(); // Firebase 초기화
+  runApp(MyApp());
+}
+
+runApp() 실행 전에 플러터 위젯을 미리 준비하고, Firebase를 초기화하여 Firestore를 사용할 수 있는
+사전 준비를 끝내줍니다. 설정이 끝난 후 앱을 실행하여 문제 없이 실행된다면 설정이 잘된 겁니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211498707-cccfd89d-467b-4fcf-b863-9b55b40d0ab0.png)
+
+
+
