@@ -73,3 +73,11 @@ Todo 객체를 인수로 받아서 할 일 추가, 삭제, 완료/미완료의 �
 ListTile의 형식에 따라 보여지게 됩니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211459556-d3d119c0-c44c-499f-8f69-8f61d4b2ce2a.png)
+
+#### 할 일 완료/미완료 기능 추가
+```
+ListTile을 탭했을 때 이탤릭체와 취소선이 가도록 변경하는 알고리즘을 앞서 만든 _toggleTodo 메서드를 추가하여
+토글 기능으로 탭했을 때 todo.isDone의 bool 값을 true와 false로 변경하도록 하였습니다.
+완료한 한 일을 탭하면 이탤릭체와 취소선이 가도록 하는 기능을 추가하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211459933-a71bde04-070a-4da9-9c13-e6f63128c5b9.png)
