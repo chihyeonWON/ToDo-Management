@@ -134,5 +134,12 @@ runApp() 실행 전에 플러터 위젯을 미리 준비하고, Firebase를 초�
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211498707-cccfd89d-467b-4fcf-b863-9b55b40d0ab0.png)
 
+### Firestore 설정
+```
+파이어베이스 연동을 마쳤으니 Firestore를 연동합니다.
+Cloud Firestore -> 데이터베이스 만들기 -> 테스트 모드로 시작하고 지역을 default로 두고
+완료를 누릅니다. 다음과 같은 화면이 나온다면 콘솔에서의 Firestore 설정은 완료된 것입니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211500001-154b6d3f-06b9-4ffd-b22f-7456da2ef9ea.png)
 
 
