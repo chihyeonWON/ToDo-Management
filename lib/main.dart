@@ -95,7 +95,7 @@ class _TodoListPageState extends State<TodoListPage> {
                   ),
                 ),
                 ElevatedButton(
-                    onPressed: (){ },
+                    onPressed: () => _addTodo(Todo(_todoController.text)),
                     child: Text('추가'),
                 ),
               ],
