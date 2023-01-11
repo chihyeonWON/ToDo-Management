@@ -68,10 +68,8 @@ class _TodoListPageState extends State<TodoListPage> {
   }
 
   // 할 일 삭제 메서드
-  void _deleteTodo(Todo todo) {
-    setState(() {
-      _items.remove(todo);
-    });
+  void _deleteTodo(DocumentSnapshot doc) {
+    FirebaseFirestore.instance.collection('todo').doc(doc.id).delete();
   }
 
   // 할 일 완료/미완료 메서드
