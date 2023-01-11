@@ -151,4 +151,9 @@ pub get을 작동시키면 정상 작동합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211502138-c6ec9322-aaec-4e92-9691-dc66b6161e36.png)
 
-
+#### Firestore 컬렉션 생성
+```
+Firestore 콘솔에서 컬렉션 시작을 클릭하고 컬렉션 id에 todo를 입력하고
+자동 문서id 생성, 필드에 bool isDone false, string title '학교 가기'를 저장합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211695923-03a03dd9-fa36-4721-989a-215513d0abbf.png)
