@@ -42,7 +42,8 @@ class _TodoListPageState extends State<TodoListPage> {
   // 할 일 문자열 조작을 위한 컨트롤러
   var _todoController = TextEditingController();
 
-  Widget _buildItemWidget(Todo todo) {
+  Widget _buildItemWidget(DocumentSnapshot doc) {
+    final todo = Todo(doc['title'], isDone: doc['isDone']); // 문서를 받아서 todo객체를 생성
     return ListTile(
       onTap:() => _toggleTodo(todo), // Todo : 클릭 시 완료/취소되도록 수정
       title:Text(
