@@ -187,3 +187,12 @@ DB 값이 변경되었을 때 자동으로 값을 찾아와서 그립니다. 따
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211698866-f12647f4-5fcd-496b-b6bc-e3d3f319e26f.png)
 
+#### 할 일 완료 토글(Update)
+```
+할 일 완료/미완료 처리 메서드 _toggleTodo를 수정하겠습니다.
+먼저 _buildItemWidget에서 ListTile의 onTap 프로퍼티의 메서드의 인수를 doc로 수정하고
+_toggleTodo 메서드안에 update 메서드에 수정하고자 하는 내용을 Map 형태로 전달하였습니다.
+모든 할 일을 탭하여 완료하도록 변경하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211700069-38b232f1-9fbb-4b8d-a251-5b9d11e44f3c.png)
+
