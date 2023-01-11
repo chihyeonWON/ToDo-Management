@@ -157,3 +157,14 @@ Firestore 콘솔에서 컬렉션 시작을 클릭하고 컬렉션 id에 todo를 
 자동 문서id 생성, 필드에 bool isDone false, string title '학교 가기'를 저장합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211695923-03a03dd9-fa36-4721-989a-215513d0abbf.png)
+
+#### 할 일 목록 가져오기 (Query)
+```
+파이어베이스 Cloud Firestore 데이터베이스에 '학교 가기' 할 일을 앞에서 저장하였습니다.
+이 자료를 읽어 와서 앱에 표시하겠습니다.
+앱에 할 일 목록을 표시하는 ListTile을 감싸는 Expanded 위젯을 StreamBuilder로 감싸고 
+Firestore의 snapshots() 메서드를 사용해 데이터의 스트림을 얻습니다.
+스트림을 활용하여 컬렉션에서 변경되는 부분의 내용을 바로 반응하여 화면을 업데이트 할 수 있습니다.
+앞서 Firestore에서 만든 todo 컬렉션의 학교 가기 할 일을 정상적으로 받아와서 화면에 그렸습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211697698-0e50e758-6392-4ea2-80a4-105fc5ca1cdf.png)
