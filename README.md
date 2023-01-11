@@ -168,3 +168,12 @@ Firestore의 snapshots() 메서드를 사용해 데이터의 스트림을 얻습
 앞서 Firestore에서 만든 todo 컬렉션의 학교 가기 할 일을 정상적으로 받아와서 화면에 그렸습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211697698-0e50e758-6392-4ea2-80a4-105fc5ca1cdf.png)
+
+#### 문서 추가
+```
+todo 컬렉션의 문서를 숙제하기 할 일을 추가하였습니다. 
+앞서 작성한 StreamBuilder 클래스를 활용해서 데이터를 스트림으로 가져오기 때문에
+DB 값이 변경되었을 때 자동으로 값을 찾아와서 그립니다. 따라서 현재
+문서에서 작성하는 데이터들이 앱에는 바로바로 데이터의 추가,수정,삭제가 이루어지는 것을 알 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211698179-af1f778c-18d1-4e21-be50-4500d3b8e32d.png)
