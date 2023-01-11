@@ -151,7 +151,7 @@ Cloud Firestore -> 데이터베이스 만들기 -> 테스트 모드로 시작하
 이 때 cloud_firestore와 firebase_core의 버전이 맞지 않아 버그가 발생할 수 있습니다.
 flutter pub upgrade --major-versions 명령어를 터미널에서 실행하여 최신 버전의 라이브러리로 업데이트 한 후에
 pub get을 작동시키면 정상 작동합니다.
-```
+``` 
 ![image](https://user-images.githubusercontent.com/58906858/211502138-c6ec9322-aaec-4e92-9691-dc66b6161e36.png)
 
 #### Firestore 컬렉션 생성
