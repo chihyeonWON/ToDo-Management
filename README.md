@@ -196,3 +196,10 @@ _toggleTodo 메서드안에 update 메서드에 수정하고자 하는 내용을
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211700069-38b232f1-9fbb-4b8d-a251-5b9d11e44f3c.png)
 
+#### 할 일 삭제하기(Delete)
+```
+_buildItemWidget의 trailing의 _deleteTodo의 인수로 doc를 넘겨주고 
+_deleteTodo 메서드를 delete() 메서드로 문서를 삭제하도록 변경하였습니다.
+최종적으로 쓰레기통 아이콘을 클릭하여 모든 할 일을 삭제하였고 앱과 Firestore에서의 할 일 모두 삭제되는 것을 알 수 있었습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211700843-4f196e6c-ed26-4c6f-9c7d-7291ca779d53.png)
