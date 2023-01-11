@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart'; // 머터리얼 디자인의 플러터 앱 라이브러리
+import 'package:firebase_core/firebase_core.dart'; // Firestore_core 라이브러리
 import 'package:cloud_firestore/cloud_firestore.dart'; // Firestore 라이브러리
 
 void main() async {
