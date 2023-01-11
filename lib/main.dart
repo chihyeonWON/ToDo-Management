@@ -45,7 +45,7 @@ class _TodoListPageState extends State<TodoListPage> {
   Widget _buildItemWidget(DocumentSnapshot doc) {
     final todo = Todo(doc['title'], isDone: doc['isDone']); // 문서를 받아서 todo객체를 생성
     return ListTile(
-      onTap:() => _toggleTodo(todo), // Todo : 클릭 시 완료/취소되도록 수정
+      onTap:() => _toggleTodo(doc), // Todo : 클릭 시 완료/취소되도록 수정
       title:Text(
         todo.title, // 할 일
         style:todo.isDone ? TextStyle( // 완료일 때는 스타일 적용
@@ -78,7 +78,7 @@ class _TodoListPageState extends State<TodoListPage> {
   void _toggleTodo(DocumentSnapshot doc) {
     FirebaseFirestore.instance.collection('todo').doc(doc.id).update({
       'isDone': !doc['isDone'],
-    })
+    });
   }
 
   @override
