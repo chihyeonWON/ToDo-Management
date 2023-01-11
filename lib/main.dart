@@ -105,10 +105,18 @@ class _TodoListPageState extends State<TodoListPage> {
                 ),
               ],
             ),
-            Expanded(
-              child:ListView(
-                children:_items.map((todo) => _buildItemWidget(todo)).toList(),
-              ),
+            StreamBuilder<QuerySnapshot>(
+              stream: FirebaseFirestore.instance.collection('todo').snapshots(), // todo 컬렉션의 모든 문서를 스트림으로 얻음 스트림은 자료가 변경되었을 때 반응하여 화면을 다시 그려줌
+              builder: (context, snapshot) {
+                if(!snapshot.hasData) {
+                  return CircularProgressIndicator(); // 자료가 없을 때 로딩 표시
+                }
+                final documents = snapshot.data?.docs; // 모든 문서를 얻습니다.
+                return Expanded(
+                  child:ListView(
+                    children: documents!.map((doc) => _buildItemWidget(doc)).toList()),
+                );
+              }
             ),
           ],
         )
