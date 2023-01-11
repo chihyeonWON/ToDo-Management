@@ -36,9 +36,6 @@ class TodoListPage extends StatefulWidget {
 }
 
 class _TodoListPageState extends State<TodoListPage> {
-  // 할 일 목록을 저장할 리스트
-  final _items = <Todo>[]; // Todo 객체 리스트
-
   // 할 일 문자열 조작을 위한 컨트롤러
   var _todoController = TextEditingController();
 
