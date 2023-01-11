@@ -177,3 +177,13 @@ DB 값이 변경되었을 때 자동으로 값을 찾아와서 그립니다. 따
 문서에서 작성하는 데이터들이 앱에는 바로바로 데이터의 추가,수정,삭제가 이루어지는 것을 알 수 있습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211698179-af1f778c-18d1-4e21-be50-4500d3b8e32d.png)
+
+#### 할 일 추가하기(Insert)
+```
+문서 -> 앱으로는 데이터의 추가,수정,삭제가 stream으로 바로바로 수정이 됩니다.
+앱에서 할 일을 추가했을 때 문서에도 반영하도록 수정하여야 합니다.
+추가 메서드 _addTodo를 FirebaseFirestore의 todo 컬렉션에 add() 메서드를 사용해서 새로운 문서를 추가합니다.
+앱에서 추가한 빨래하기 항목이 Firestore에도 정상적으로 추가되는 것을 알 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211698866-f12647f4-5fcd-496b-b6bc-e3d3f319e26f.png)
+
