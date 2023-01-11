@@ -55,7 +55,7 @@ class _TodoListPageState extends State<TodoListPage> {
       ),
       trailing: IconButton( // 뒤에는 쓰레기통 아이콘을 배치
         icon:Icon(Icons.delete_forever),
-        onPressed:() => _deleteTodo(todo), //Todo : 쓰레기통 클릭 시 삭제되도록 수정
+        onPressed:() => _deleteTodo(doc), //Todo : 쓰레기통 클릭 시 삭제되도록 수정
       )
     );
   }
